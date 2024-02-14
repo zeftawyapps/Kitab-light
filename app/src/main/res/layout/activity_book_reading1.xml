@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ws.wolfsoft.e_books.BookReadingActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?android:actionBarSize"-->
+        <!--app:layout_scrollFlags="scroll|snap|enterAlways"-->
+        <!--app:title="@string/app_name" />-->
+
+        <include layout="@layout/toolbar_bookreading"
+            app:layout_scrollFlags="scroll|snap|enterAlways"/>
+
+
+        <!--<customfonts.TextViewSFProDisplayMedium-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="15dp"-->
+            <!--android:text="Designed by WSDesign Team"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16.7sp"-->
+            <!--app:layout_scrollFlags="scroll|snap|enterAlways" />-->
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+
+
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:textSize="15sp"
+            android:textColor="@color/txt_color"
+            android:layout_marginLeft="13.3dp"
+            android:layout_marginRight="13.3dp"
+
+            android:text="Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat."/>
+
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="38dp" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transperent"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_behavior="customfonts.ScrollingToolbarBehavior">
+
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff"
+            app:layout_behavior="customfonts.ScrollingToolbarBehavior"
+            android:elevation="8dp"
+            android:layout_marginTop="15dp"
+            android:gravity="bottom|end"
+            android:layout_gravity="bottom"
+            app:bb_activeTabColor="#ffffff"
+            app:bb_badgesHideWhenActive="true"
+            app:bb_inActiveTabColor="#a4ebfe"
+            app:bb_showShadow="true"
+            app:bb_tabXmlResource="@xml/bottombar_tabs1"
+            app:bb_titleTextAppearance="@style/botoombar_textchange"
+            app:bb_titleTypeFace="fonts/Roboto-Regular.ttf"
+            app:paddingStart="10dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

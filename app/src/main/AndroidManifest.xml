@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ws.wolfsoft.e_books">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".EbooksListActivity" />
+
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".EbooksLoginActivity" />
+        <activity android:name=".EbooksFilterActivity" />
+        <activity android:name=".EbooksCategorySelectActivity" />
+        <activity android:name=".HomePageActivity"   >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".BookListActivity" />
+        <activity android:name=".BookDetailActivity" />
+        <activity android:name=".MyLibraryActivity" />
+        <activity android:name=".BookReadingActivity" />
+        <activity android:name=".AudioBookActivity" />
+        <activity android:name=".EbooksSettingActivity" />
+        <activity android:name=".EbooksCategoryActivity"></activity>
+    </application>
+
+</manifest>

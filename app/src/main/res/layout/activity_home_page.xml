@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="ws.wolfsoft.e_books.HomePageActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+
+
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="60dp"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/toolbar"/>
+        
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:src="@drawable/banner"
+            android:layout_margin="11.7dp"
+            android:scaleType="centerCrop"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11.7dp"
+            android:layout_marginLeft="11.7dp"
+            android:layout_marginTop="11.6dp"
+            android:orientation="horizontal">
+
+            <customfonts.TextViewGiorgiabold
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:textSize="16.7sp"
+                android:text="Recommend"/>
+
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View all"
+                android:textSize="13.3sp"
+                android:textColor="@color/sky_blue"/>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="13.3dp"
+            android:paddingLeft="16.7dp"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/recommanded_recyclerview"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11.7dp"
+            android:layout_marginLeft="11.7dp"
+            android:layout_marginTop="23.3dp"
+            android:orientation="horizontal">
+
+            <customfonts.TextViewGiorgiabold
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:textSize="16.7sp"
+                android:text="Today’s Top 50 Books"/>
+
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View all"
+                android:textSize="13.3sp"
+                android:textColor="@color/sky_blue"/>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="13.3dp"
+            android:paddingLeft="16.7dp"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/top50_books_recyclerview"/>
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="52.6dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:layout_marginTop="15dp"
+        android:gravity="bottom|end"
+        android:layout_gravity="bottom"
+        app:bb_activeTabColor="#ffffff"
+        app:bb_badgesHideWhenActive="true"
+        app:bb_inActiveTabColor="#a4ebfe"
+        app:bb_showShadow="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        app:bb_titleTextAppearance="@style/botoombar_textchange"
+        app:bb_titleTypeFace="fonts/Roboto-Regular.ttf"
+        app:paddingStart="10dp" />
+    
+
+</RelativeLayout>
